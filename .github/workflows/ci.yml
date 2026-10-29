@@ -15,15 +15,13 @@ jobs:
         with: { distribution: temurin, java-version: '21' }
       # The Ubuntu runner ships the Android SDK; Gradle fetches the platform it needs.
       - name: Unit tests, lint, release build (unsigned)
-        run: ./gradlew --no-daemon :app:testFullDebugUnitTest :app:testPlayDebugUnitTest :app:lintFullRelease :app:lintPlayRelease :app:assembleFullRelease :app:assemblePlayRelease -Punsigned
+        run: ./gradlew --no-daemon :app:testDebugUnitTest :app:lintRelease :app:assembleRelease -Punsigned
       - name: No internet permission, ever
         run: |
           for m in $(find app/build/intermediates/merged_manifest -name AndroidManifest.xml); do
             echo "Checking $m"
             if grep -q 'android.permission.INTERNET' "$m"; then echo "INTERNET permission found"; exit 1; fi
           done
-          if grep -q MANAGE_EXTERNAL_STORAGE app/build/intermediates/merged_manifest/playRelease/*/AndroidManifest.xml; then echo "Play build must not ask for All files access"; exit 1; fi
-          if grep -qE 'BIND_ACCESSIBILITY_SERVICE|CaptureService|CaptureTile' app/build/intermediates/merged_manifest/playRelease/*/AndroidManifest.xml; then echo "Play build must not contain the accessibility service"; exit 1; fi
       - name: Colors only in Tokens.kt
         run: |
           if grep -rnE 'Color\(0x|Color\.(White|Black|Red|Green|Blue|Gray)' app/src/main/java | grep -v '/Tokens.kt:'; then echo "Use a role from Tokens.colors"; exit 1; fi
@@ -33,5 +31,5 @@ jobs:
         run: python3 scripts/checks.py
       - uses: actions/upload-artifact@v4
         with:
-          name: clipshot-unsigned
-          path: app/build/outputs/apk/*/release/*.apk
+          name: echo-unsigned
+          path: app/build/outputs/apk/release/*.apk

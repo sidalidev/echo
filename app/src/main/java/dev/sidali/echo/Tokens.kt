@@ -93,10 +93,6 @@ object Tokens {
     val hairline = 1.dp
     /** Smallest height of anything tappable. */
     val touchTarget = 48.dp
-    /** Thumbnail of the last screenshot: a phone screen in miniature. */
-    val thumbWidth = 54.dp
-    val thumbHeight = 96.dp
-    val thumbRadius = 12.dp
 
     /** Tinted (secondary) buttons: the role color at 12 %. */
     const val tintAlpha = 0.12f

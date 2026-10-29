@@ -2,7 +2,7 @@
 """
 Release checks. CI runs them after the release build; run them locally the same way:
 
-    ./gradlew :app:assembleFullRelease :app:assemblePlayRelease -Punsigned && python3 scripts/checks.py
+    ./gradlew :app:assembleRelease -Punsigned && python3 scripts/checks.py
 
 Fails when:
   - a merged release manifest asks for a permission that is not in docs/permissions.txt;
@@ -25,7 +25,7 @@ errors: list[str] = []
 
 def permissions() -> None:
     allowed = {line.strip() for line in (ROOT / "docs/permissions.txt").read_text().splitlines() if line.strip()}
-    manifests = sorted(ROOT.glob("app/build/intermediates/merged_manifest/*Release/*/AndroidManifest.xml"))
+    manifests = sorted(ROOT.glob("app/build/intermediates/merged_manifest/release/*/AndroidManifest.xml"))
     if not manifests:
         errors.append("No merged release manifest: build the release first.")
     for m in manifests:
