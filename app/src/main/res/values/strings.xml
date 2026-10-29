@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name" translatable="false">Echo</string>
+    <string name="tagline">Hear yourself the way they will, before the call.</string>
+
+    <!-- Main screen -->
+    <string name="mic_label">Microphone</string>
+    <string name="mic_usb">USB-C headset</string>
+    <string name="mic_wired">Wired headset</string>
+    <string name="mic_bluetooth">Bluetooth headset</string>
+    <string name="mic_phone">Phone microphone</string>
+    <string name="mic_usb_body">Wired, full quality. This is what Meet and Teams will use.</string>
+    <string name="mic_wired_body">Wired, full quality. This is what Meet and Teams will use.</string>
+    <string name="mic_bluetooth_body">In a call, Bluetooth switches to a narrower call mode. The test plays exactly that.</string>
+    <string name="mic_phone_body">Nothing plugged in: a call uses the phone microphone on the loudspeaker.</string>
+    <string name="test_me">Test me</string>
+    <string name="recording">Talk normally… %1$d</string>
+    <string name="processing">Compressing like a call</string>
+    <string name="playing">This is how they hear you</string>
+    <string name="playing_raw">This is your raw microphone</string>
+    <string name="stop">Stop</string>
+    <string name="play_again">Play again</string>
+    <string name="play_raw">Hear the raw mic</string>
+    <string name="result_label">Result</string>
+    <string name="recorded_with">Recorded with %1$s</string>
+    <string name="level_silent">No sound</string>
+    <string name="level_silent_body">The microphone picked up nothing. Check that the mic isn\'t muted or covered, then try again.</string>
+    <string name="level_quiet">Too quiet</string>
+    <string name="level_quiet_body">They will struggle to hear you. Bring the mic closer to your mouth or speak up.</string>
+    <string name="level_good">Clear</string>
+    <string name="level_good_body">Good level. This is close to what the other side hears.</string>
+    <string name="level_clipping">Too loud</string>
+    <string name="level_clipping_body">Your voice saturates. Move the mic a little away from your mouth.</string>
+    <string name="level_db">Speech at %1$d dB</string>
+    <string name="mic_needed_title">One permission, that\'s all</string>
+    <string name="mic_needed_body">Echo needs the microphone to record five seconds. The take stays in memory and is gone when you leave. Echo has no internet access.</string>
+    <string name="mic_needed_button">Allow the microphone</string>
+    <string name="mic_settings">Open settings</string>
+    <string name="mic_busy">The microphone is busy. Close the other app using it and try again.</string>
+    <string name="privacy">No internet permission. No account. No tracking.\nYour voice never leaves your phone.</string>
+    <string name="close">Close</string>
+    <string name="back">Back</string>
+    <string name="about">About</string>
+
+    <!-- About (the same screen in every app by Sid) -->
+    <string name="about_title">About</string>
+    <string name="about_principles">Our principles</string>
+    <string name="principle_1">Your data belongs to you.</string>
+    <string name="principle_2">No account. No tracking. No ads.</string>
+    <string name="principle_3">Nothing leaves your device unless you choose it.</string>
+    <string name="principle_4">The code is open, so anyone can check this.</string>
+    <string name="about_version">Version</string>
+    <string name="version_line">Version %1$s</string>
+    <string name="whats_new">What\'s new</string>
+    <string name="about_security">Security</string>
+    <string name="security_review">Last security review: %1$s</string>
+    <string name="security_audit">Internal review. No external audit yet.</string>
+    <string name="signing_certificate">Signing certificate</string>
+    <string name="unknown">Unknown</string>
+    <string name="report_issue">Report a security issue</string>
+    <string name="about_links">Links</string>
+    <string name="source_code">Source code</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="contact">Contact</string>
+    <string name="made_by">Made by Sid · sidali.dev</string>
+    <string name="credits_fonts">Type: Bricolage Grotesque and Figtree, under the SIL Open Font License.</string>
+    <string name="no_app_for_link">No app on this phone can open this link.</string>
+    <string name="nothing_stored">Echo stores nothing. Each take lives in memory and is gone when you leave the app, so there is nothing to erase.</string>
+
+    <!-- What leaves your device (same facts as PRIVACY.md) -->
+    <string name="leaves_title">What leaves your device</string>
+    <string name="leaves_nothing">Nothing. This app has no internet access.</string>
+    <string name="leaves_voice_title">Your voice</string>
+    <string name="leaves_voice">Each take is recorded into memory, compressed and played back on the phone. It is never written to storage and never sent anywhere.</string>
+    <string name="leaves_backups_title">Backups</string>
+    <string name="leaves_backups">Echo keeps no data, and is excluded from cloud backups and phone-to-phone transfers.</string>
+    <string name="leaves_links_title">Links</string>
+    <string name="leaves_links">Links in About open in your browser or mail app, only when you tap them. Echo itself never connects to anything.</string>
+</resources>

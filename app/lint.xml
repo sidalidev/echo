@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <!-- English only: every interface string lives in values/strings.xml. -->
+    <issue id="HardcodedText" severity="error" />
+    <issue id="MissingTranslation" severity="error" />
+    <issue id="RtlHardcoded" severity="error" />
+    <!-- Not on Google Play. All files access is optional and asked only for "Remove from gallery". -->
+    <issue id="ScopedStorage" severity="ignore" />
+    <!-- Partial "selected photos" access cannot see new screenshots; the app asks for full access and explains why. -->
+    <issue id="SelectedPhotoAccess" severity="ignore" />
+    <issue id="UseKtx" severity="ignore" />
+    <issue id="ApplySharedPref" severity="ignore" />
+    <issue id="AndroidGradlePluginVersion" severity="ignore" />
+    <issue id="GradleDependency" severity="ignore" />
+    <issue id="LocalContextResourcesRead" severity="ignore" />
+</lint>

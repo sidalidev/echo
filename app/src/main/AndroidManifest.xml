@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Echo: no INTERNET permission, on purpose. Your voice never leaves the phone. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Asked on the first test: records five seconds into memory. -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- Puts the phone in call mode on the headset, like Meet or Teams, for the length of a test. -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/no_extraction"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:enableOnBackInvokedCallback="true"
+        tools:targetApi="33"
+        android:theme="@style/Theme.Echo">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- About and "What leaves your device". Its links open in the browser, on a tap. -->
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+    </application>
+</manifest>

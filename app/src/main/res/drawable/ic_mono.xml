@@ -1,0 +1,8 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
+    <!-- Themed icon (Android 13+): the same drawing as one color the system tints. -->
+    <group android:translateX="24" android:translateY="24" android:scaleX="2.5" android:scaleY="2.5">
+        <path android:strokeColor="#FFFFFFFF" android:strokeWidth="2.1" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillColor="#00000000"
+            android:pathData="M12,10.2a1.8,1.8 0,1 1,0 3.6a1.8,1.8 0,1 1,0 -3.6zM8.4,8.4a5.1,5.1 0,0 0,0 7.2M15.6,8.4a5.1,5.1 0,0 1,0 7.2M5.6,5.6a9,9 0,0 0,0 12.8M18.4,5.6a9,9 0,0 1,0 12.8" />
+    </group>
+</vector>

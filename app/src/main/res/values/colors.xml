@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Launch window: the page color (Crème miel), so the first frame has no flash. -->
+    <color name="bg">#FFFBF7EF</color>
+    <!-- Echo's color (Heather), the background of the app icon. -->
+    <color name="heather">#FF9A4A68</color>
+</resources>
